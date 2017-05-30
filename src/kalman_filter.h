@@ -63,12 +63,6 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
-
-  /**
-   * CalculateJacobian() function returns the correct Jacobian matrix.
-   * @param x_state he measurement at k+1
-   */
-  Eigen::MatrixXd CalculateJacobian(const Eigen::VectorXd& x_state);
 };
 
 #endif /* KALMAN_FILTER_H_ */
